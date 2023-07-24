@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="../script/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/obank.css">
+    <title>개인뱅킹</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div class="container">
+                <div class="header"></div>
+                <div class="tit">
+                    <a href="../pages/obank.html"><img src="../images/obank/tit_obank.png" alt="개인 제목"></a>
+                    <ul class="certMenu">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">인증센터</a></li>
+                    </ul>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#">조회</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">계좌조회</a>
+                                    <ul>
+                                        <li><a href="#">국민은행 계좌조회</a></li>
+                                        <li><a href="#">다른금융 조회</a></li>
+                                        <li><a href="#">KB금융그룹통합 조회</a></li>
+                                        <li><a href="#">휴먼계좌 조회</a></li>
+                                        <li><a href="#">전자통장 조회</a></li>
+                                        <li><a href="#">장기미거래신탁계좌 조회</a></li>
+                                        <li><a href="#">ID모아보기 계좌조회</a></li>
+                                        <li><a href="#">착오송금 반환 동의</a></li>
+                                        <li><a href="#">오픈뱅킹 착오송금 반환 신청</a></li>
+                                        <li><a href="#">공채 본인부담금 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">거래내역 조회</a>
+                                    <ul>
+                                        <li><a href="#">거래내역 조회</a></li>
+                                        <li><a href="#">다른금융 통합거래내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">전자어음 조회</a>
+                                    <ul>
+                                        <li><a href="#">수취어음 조회</a></li>
+                                        <li><a href="#">배서어음 조회</a></li>
+                                        <li><a href="#">반환관련어음 조회</a></li>
+                                        <li><a href="#">부도어음반환</a></li>
+                                        <li><a href="#">상환청구</a></li>
+                                        <li><a href="#">보증전자어음</a></li>
+                                        <li><a href="#">배서보증요청/결과내역 조회</a></li>
+                                        <li><a href="#">만기결제어음 조회</a></li>
+                                        <li><a href="#">부도어음 조회</a></li>
+                                        <li><a href="#">상환청구 정보조회</a></li>
+                                        <li><a href="#">사고신고 정보조회</a></li>
+                                        <li><a href="#">확인증</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">에스크로 조회</a>
+                                </li>
+                                <li>
+                                    <a href="#">수표어음 조회</a>
+                                    <ul>
+                                        <li><a href="#">자기앞수표조회</a></li>
+                                        <li><a href="#">My자기앞수표 발행내역 조회</a></li>
+                                        <li><a href="#">당좌수표/어음 조회</a></li>
+                                        <li><a href="#">당좌수표/어음번호별 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">어카운트인포</a>
+                                </li>
+                                <li>
+                                    <a href="#">계약서류 관리</a>
+                                    <ul>
+                                        <li><a href="#">예금</a></li>
+                                        <li><a href="#">펀드</a></li>
+                                        <li><a href="#">신탁/ISA</a></li>
+                                        <li><a href="#">외화</a></li>
+                                        <li><a href="#">골드</a></li>
+                                        <li><a href="#">퇴직연금</a></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">이체</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">계좌이체</a>
+                                    <ul>
+                                        <li><a href="#">계좌이체</a></li>
+                                        <li><a href="#">다른금융 계좌이체</a></li>
+                                        <li><a href="#">잔액 모으기</a></li>
+                                        <li><a href="#">잔액 모으기 예약</a></li>
+                                        <li><a href="#">잔액 모으기 예약 관리</a></li>
+                                        <li><a href="#">퇴직급여(개인형IRP)이체</a></li>
+                                        <li><a href="#">ID모아보기 이체</a></li>
+                                        <li><a href="#">리브포켓이체</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">이체결과 조회</a>
+                                    <ul>
+                                        <li><a href="#">계좌이체결과 조회</a></li>
+                                        <li><a href="#">다른금융계좌 이체결과조회</a></li>
+                                        <li><a href="#">잔액 모으기 예약 결과조회</a></li>
+                                        <li><a href="#">전화승인결과 조회</a></li>
+                                        <li><a href="#">ID모아보기 이체결과 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">자동이체</a>
+                                    <ul>
+                                        <li><a href="#">자동이체내역 조회/해지/변경</a></li>
+                                        <li><a href="#">자동이체 등록</a></li>
+                                        <li><a href="#">자동이체결과확인증</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">에스크로 이체</a>
+                                    <ul>
+                                        <li><a href="#">에스크로 이체</a></li>
+                                        <li><a href="#">에스크로 이체결과 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">자동이체 서비스</a>
+                                    <ul>
+                                        <li><a href="#">자동이체통합관리 서비스란?</a></li>
+                                        <li><a href="#">자동이체 계좌변경</a></li>
+                                        <li><a href="#">자동납부 계좌조회/출금계좌 변경</a></li>
+                                        <li><a href="#">자동납부 변경신청결과 조회</a></li>
+                                        <li><a href="#">자동송금 계좌조회/출금계좌 변경</a></li>
+                                        <li><a href="#">자동송금 변경신청결과 조회</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">공과금</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">MY 공과금</a>
+                                    <ul>
+                                        <li><a href="#">공과금 등록/관리</a></li>
+                                        <li><a href="#">공과금 조회/납부</a></li>
+                                        <li><a href="#">납부확인증 보관함</a></li>
+                                        <li><a href="#">예약납부등록</a></li>
+                                        <li><a href="#">예약납부조회/취소</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">지로/생활요금/CMS/펌뱅킹</a>
+                                    <ul>
+                                        <li><a href="#">지로 납부/관리</a></li>
+                                        <li><a href="#">생활요금 납부</a></li>
+                                        <li><a href="#">납부내역 조회/취소</a></li>
+                                        <li><a href="#">자동납부 등록/해지</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">지방세</a>
+                                    <ul>
+                                        <li><a href="#">지방세납부</a></li>
+                                        <li><a href="#">세외수입납부</a></li>
+                                        <li><a href="#">기타세임금</a></li>
+                                        <li><a href="#">환경개선부담금</a></li>
+                                        <li><a href="#">납부내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">4대보험료</a>
+                                    <ul>
+                                        <li><a href="#">통합사회보험료납부(연금/건강/고용/산채)</a></li>
+                                        <li><a href="#">국민연금납부(반납금/추납보험료)</a></li>
+                                        <li><a href="#">산채보험료납부(연납/분기납)</a></li>
+                                        <li><a href="#">고용보험료납부(연납/분기납)</a></li>
+                                        <li><a href="#">고용/산재자진납부</a></li>
+                                        <li><a href="#">납부내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">국세/관세</a>
+                                    <ul>
+                                        <li><a href="#">국세</a></li>
+                                        <li><a href="#">관세</a></li>
+                                        <li><a href="#">납부내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">기금/국고</a>
+                                    <ul>
+                                        <li><a href="#">기금/국고납부</a></li>
+                                        <li><a href="#">납부내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">범칙/벌과금</a>
+                                    <ul>
+                                        <li><a href="#">범칙/벌과금 납부</a></li>
+                                        <li><a href="#">납부내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">대학등록금</a>
+                                    <ul>
+                                        <li><a href="#">등록금 납부</a></li>
+                                        <li><a href="#">납부조회/취소</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">법원업부</a>
+                                    <ul>
+                                        <li><a href="#">공탁금 납부</a></li>
+                                        <li><a href="#">송달료 납부</a></li>
+                                        <li><a href="#">보관금 납부</a></li>
+                                        <li><a href="#">집행관 납부</a></li>
+                                        <li><a href="#">등기신청수수료 납부</a></li>
+                                        <li><a href="#">소송등인지대 납부</a></li>
+                                        <li><a href="#">납부내역조회</a></li>
+                                        <li><a href="#">환급내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">뱅킹관리</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">제증명발급</a>
+                                    <ul>
+                                        <li><a href="#">연말정산증명서</a></li>
+                                        <li><a href="#">통장사본</a></li>
+                                        <li><a href="#">예금잔액증명서</a></li>
+                                        <li><a href="#">예금잔액증명서 영업점 발급신청</a></li>
+                                        <li><a href="#">금융거래확인서</a></li>
+                                        <li><a href="#">금융거래확인서 예약내역 조회/발급</a></li>
+                                        <li><a href="#">부채증명서</a></li>
+                                        <li><a href="#">원천징수영수증 발급</a></li>
+                                        <li><a href="#">금융소득종합과세 조회</a></li>
+                                        <li><a href="#">증명서재출력</a></li>
+                                        <li><a href="#">통장/인감분실 재발행 및 예금 잔액증명서 발급내역 조회</a></li>
+                                        <li><a href="#">통장/인감분실 재발행 신청</a></li>
+                                        <li><a href="#">펀드판매사이동 계좌확인서</a></li>
+                                        <li><a href="#">계좌 개설 안내장(BDOUnibank)</a></li>
+                                        <li><a href="#">외국환매입(예치)증명서</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">계좌관리</a>
+                                    <ul>
+                                        <li><a href="#">출금계좌 등록/삭제/순위변경</a></li>
+                                        <li><a href="#">계좌비밀번호 신규/변경</a></li>
+                                        <li><a href="#">계좌별명등록/변경/삭제</a></li>
+                                        <li><a href="#">빠른조회 서비스 등록/해지</a></li>
+                                        <li><a href="#">전자금융거래 제한계좌등록</a></li>
+                                        <li><a href="#">KB내맘대로 계좌번호서비스</a></li>
+                                        <li><a href="#">자동화기기 이용번호 변경</a></li>
+                                        <li><a href="#">계좌뷰서비스 해지</a></li>
+                                        <li><a href="#">계좌숨기기 관리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">이체관리</a>
+                                    <ul>
+                                        <li><a href="#">자주쓰는계좌 등록/삭제</a></li>
+                                        <li><a href="#">단축이체 등록/삭제</a></li>
+                                        <li><a href="#">입금계좌 등록/삭제</a></li>
+                                        <li><a href="#">즉시입금계좌 등록/삭제</a></li>
+                                        <li><a href="#">장기미사용이체제한 조회/해제</a></li>
+                                        <li><a href="#">이체한도 조회/감액</a></li>
+                                        <li><a href="#">빠른이체서비스 해지</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">인터넷 뱅킹관리</a>
+                                        <ul>
+                                            <li><a href="#">ID조회/사용자암호 설정</a></li>
+                                            <li><a href="#">인터넷뱅킹 해지</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#">통지 서비스</a>
+                                        <ul>
+                                            <li><a href="#">KB스타뱅킹 알림서비스</a></li>
+                                            <li><a href="#">입출금내역 자동통지 서비스</a></li>
+                                            <li><a href="#">납입일고지 SMS 서비스부</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">ID모아보기서비스</a>
+                                        <ul>
+                                            <li><a href="#">ID모아보기서비스 신청/변경/해지</a></li>
+                                            <li><a href="#">ID모아보기 출금계좌등록/삭제</a></li>
+                                            <li><a href="#">ID모아보기 출금계좌 순위변경</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="#">이용안내</a>
+                                        <ul>
+                                            <li><a href="#">첫 방문 고객을 위한 안내</a></li>
+                                            <li><a href="#">인터넷뱅킹 FAQ</a></li>
+                                            <li><a href="#">이용시간 안내</a></li>
+                                            <li><a href="#">인터넷뱅킹 이용안내</a></li>
+                                            <li><a href="#">이용수수료 안내</a></li>
+                                            <li><a href="#">이용약관 안내</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">금융상품</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">예금</a>
+                                    <ul>
+                                        <li><a href="#">예금 상품/가입</a></li>
+                                        <li><a href="#">판매중지상품</a></li>
+                                        <li><a href="#">예금 조회/해지</a></li>
+                                        <li><a href="#">예금 관리</a></li>
+                                        <li><a href="#">예금가이드</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">펀드</a>
+                                    <ul>
+                                        <li><a href="#">펀드 상품/가입</a></li>
+                                        <li><a href="#">펀드 입금/환매/조회</a></li>
+                                        <li><a href="#">펀드관리</a></li>
+                                        <li><a href="#">연금저축펀드</a></li>
+                                        <li><a href="#">펀드 투자정보</a></li>
+                                        <li><a href="#">연금계좌가져오기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">대출</a>
+                                    <ul>
+                                        <li><a href="#">대출상품/신청</a></li>
+                                        <li><a href="#">대출진행현황</a></li>
+                                        <li><a href="#">대출관리</a></li>
+                                        <li><a href="#">대출 가이드</a></li>
+                                        <li><a href="#">신용평가 및 여신심사 자료제출</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">신탁</a>
+                                    <ul>
+                                        <li><a href="#">신탁 상품</a></li>
+                                        <li><a href="#">신탁 조회/입금/해지</a></li>
+                                        <li><a href="#">신탁 관리</a></li>
+                                        <li><a href="#">연금저축신탁 비교공시</a></li>
+                                        <li><a href="#">스튜어드십 코드</a></li>
+                                        <li><a href="#">채권상품 안내</a></li>
+                                        <li><a href="#">기타 안내사항</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">ISA</a>
+                                    <ul>
+                                        <li><a href="#">ISA 상품/가입</a></li>
+                                        <li><a href="#">ISA 조회/입금</a></li>
+                                        <li><a href="#">ISA 해지(일임형)</a></li>
+                                        <li><a href="#">ISA 관리</a></li>
+                                        <li><a href="#">ISA 가이드</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">보험/공제</a>
+                                    <ul>
+                                        <li><a href="#">보험상품</a></li>
+                                        <li><a href="#">보험 가입</a></li>
+                                        <li><a href="#">보험 조회/입금</a></li>
+                                        <li><a href="#">노란우산공제</a></li>
+                                        <li><a href="#">보험 가이드</a></li>
+                                        <li><a href="#">판매중지상품</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">골드</a>
+                                    <ul>
+                                        <li><a href="#">KB골드뱅킹</a></li>
+                                        <li><a href="#">골드바</a></li>
+                                        <li><a href="#">실버바</a></li>
+                                        <li><a href="#">기념주화/기념메달</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">외화예금</a>
+                                    <ul>
+                                        <li><a href="#">외화예금상품/가입</a></li>
+                                        <li><a href="#">외화예금 추가입금</a></li>
+                                        <li><a href="#">외화예금 조회/해지</a></li>
+                                        <li><a href="#">외화예금 금리안내</a></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">외환</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">외환정보관리</a>
+                                    <ul>
+                                        <li><a href="#">영문정보관리</a></li>
+                                        <li><a href="#">외화송금주소록</a></li>
+                                        <li><a href="#">외환알림서비스</a></li>
+                                        <li><a href="#">거래외국환은행지정</a></li>
+                                        <li><a href="#">SWIFT전신문조회</a></li>
+                                        <li><a href="#">월드종합서비스(외환프라자)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">환율</a>
+                                    <ul>
+                                        <li><a href="#">환율조회</a></li>
+                                        <li><a href="#">환율동향정보</a></li>
+                                        <li><a href="#">환율알림서비스</a></li>
+                                        <li><a href="#">환율배너</a></li>
+                                        <li><a href="#">환율계산기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">환전</a>
+                                    <ul>
+                                        <li><a href="#">환전신청</a></li>
+                                        <li><a href="#">환전조회/관리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">해외송금보내기</a>
+                                    <ul>
+                                        <li><a href="#">바로송금</a></li>
+                                        <li><a href="#">정기예약송금</a></li>
+                                        <li><a href="#">웨스턴유니온송금</a></li>
+                                        <li><a href="#">보낸송금내영변경/반환신청</a></li>
+                                        <li><a href="#">보낸송금내역조회</a></li>
+                                        <li><a href="#">해외송금수수료납부/조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">해외송금받기</a>
+                                    <ul>
+                                        <li><a href="#">받은송금내역조회</a></li>
+                                        <li><a href="#">받을송금조회/관리(미입금분)</a></li>
+                                        <li><a href="#">외국환매입(예치)증명서</a></li>
+                                        <li><a href="#">해외송금수취정보</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">국내외화이체/외화예금입출금</a>
+                                    <ul>
+                                        <li><a href="#">외화이체/외화예금입출금</a></li>
+                                        <li><a href="#">외화자동이체</a></li>
+                                        <li><a href="#">외화이체내역조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">환율픽(Pick)</a>
+                                    <ul>
+                                        <li><a href="#">서비스안내</a></li>
+                                        <li><a href="#">서비스신청/변경/해지</a></li>
+                                        <li><a href="#">거래주문</a></li>
+                                        <li><a href="#">거래주문내역조회/변경/취소</a></li>
+                                        <li><a href="#">환율고시</a></li>
+                                        <li><a href="#">환율고시내역조회</a></li>
+                                        <li><a href="#">마이딜링룸PRO</a></li>
+                                        <li><a href="#">KB Star FX</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">외화수표</a>
+                                    <ul>
+                                        <li><a href="#">외화송금수표보낸내역조회</a></li>
+                                        <li><a href="#">외화수표환전내역조회</a></li>
+                                        <li><a href="#">외화수표수수료납부/조회</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">해외투자</a>
+                                    <ul>
+                                        <li><a href="#">해외투자사후보고대상</a></li>
+                                        <li><a href="#">해외직접투자안내</a></li>
+                                        <li><a href="#">해외부동산투자안내</a></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="searchtotal">
+                    <div class="form-search">
+                        <div class="input-holder">
+                            <input type="text" name="검색어temp" class="input" maxlength="30" placeholder="검색어를 입력하세요.">
+                            <!-- <span>검색어를 입력하세요.</span> -->
+                        </div>
+                        <div class="btn">
+                            <button type="button" class="btn-del off">검색어삭제</button>
+                            <button type="button" class="btn-sch">검색</button>
+                        </div>
+                    </div>
+                    <div class="list-con">인기</div>
+                    <ul class="list-word">
+                        <li><a href="#">OTP</a></li>
+                        <li><a href="#">통장사본</a></li>
+                        <li><a href="#">인증서 가져오기</a></li>
+                        <li><a href="#">인증서 발급/재발급</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="visual">
+            <div class="container">
+                <div class="area-con">
+                    <ul>
+                        <li class="con1 on">
+                            <strong>KB국민은행 오픈뱅킹</strong>
+                            <span>다른은행 조회/이체가 한번에<br>이체수수료 무료 혜택까지~</span>
+                            <a href="#">바로가기</a>
+                        </li>
+                        <li class="con2">
+                            <strong>KB 직장인든든 신용대출</strong>
+                            <span>휴대폰 본인인증과 간단한 직장정보 입력만으로<br>내게 꼭 맞는 대출금리와 한도를 즉시 조회!</span>
+                            <a href="#">바로가기</a>
+                        </li>
+                        <li class="con3">
+                            <strong>KB 주택담보대출</strong>
+                            <span>영업점 방문없이 신청부터 서류제출까지 쉽게<br>24시간 365일 쉽고 간편하게!</span>
+                            <a href="#">바로가기</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="area-control">
+                    <button class="ui-btn before">이전</button>
+                    <ul>
+                        <li><a class="ct1 on" href="#"></a></li>
+                        <li><a class="ct2" href="#"></a></li>
+                        <li><a class="ct3" href="#"></a></li>
+                    </ul>
+                    <button class="ui-btn play off">자동재생시작</button>
+                    <button class="ui-btn stop">자동재생멈춤</button>
+                    <button class="ui-btn next btn-off">다음</button>
+                </div>
+            </div>
+        </div>
+        <div class="link-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>전체계좌조회</span>
+                        <span>바로가기 ></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>계좌이체</span>
+                        <span>바로가기 ></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>자동이체</span>
+                        <span>바로가기 ></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>자산관리</span>
+                        <span>바로가기 ></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section1">
+                <div class="product">
+                    <div class="headline">
+                        <p>고객님들의 행복한 삶을 위한</p>
+                        <strong><span>KB</span> 대표상품</strong>
+                        <span>2023.06.15 기준</span>
+                        <span>세금공제전, 우대금리포함</span>
+                        <a href="#">바로가기 →</a>
+                    </div>
+                    <div class="slider">
+                        <ul class="list-product">
+                            <li class="pro1">
+                                <a href="#">
+                                    <em>예금</em>
+                                    <strong>
+                                        <span>Digital KB의 대표 정기예금</span>
+                                        <b>KB Star 정기예금</b>
+                                    </strong>
+                                    <div class="info">
+                                        최고 연 (36개월)<br>
+                                        <strong>3.71%</strong>
+                                    </div>
+                                    <a href="#">바로가기</a>
+                                </a>
+                            </li>
+                            <li class="pro2">
+                                <a href="#">
+                                    <em>신용대출</em>
+                                    <strong>
+                                        <span>직장인이라면</span>
+                                        <b>KB 직장인든든 신용대출</b>
+                                    </strong>
+                                    <div class="info">
+                                        최고<br>
+                                        <strong>3억원</strong>
+                                    </div>
+                                    <a href="#">바로가기</a>
+                                </a>
+                            </li>
+                            <li class="pro3">
+                                <a href="#">
+                                    <em>펀드</em>
+                                    <strong>
+                                        <span> </span>
+                                        <b>이달의 펀드</b>
+                                    </strong>
+                                    <div class="info">
+                                        KB 투자 전문가가 선택한<br>이달의 펀드
+                                    </div>
+                                    <a href="#">바로가기</a>
+                                </a>
+                            </li>
+                            <li class="pro4">
+                                <a href="#">
+                                    <em>유언대용신탁</em>
+                                    <strong>
+                                        <span> </span>
+                                        <b>KB위대한유산신탁</b>
+                                    </strong>
+                                    <div class="info">
+                                        믿고 맡기면 든든한 KB 신탁
+                                    </div>
+                                    <a href="#">바로가기</a>
+                                </a>
+                            </li>
+                            <li class="pro5">
+                                <a href="#">
+                                    <em>연금</em>
+                                    <strong>
+                                        <span> </span>
+                                        <b>(무)KB골든라이프플래티넘<br>
+                                            연금보험 Ⅱ</b>
+                                    </strong>
+                                    <div class="info">
+                                        보험사<br>
+                                        <strong>KB생명</strong>
+                                    </div>
+                                    <a href="#">바로가기</a>
+                                </a>
+                            </li>
+                            <li class="pro6">
+                                <a href="#">
+                                    <em>ISA</em>
+                                    <strong>
+                                        <span>전문가가 운용해주는 종합자산관리</span>
+                                        <b>KB국민 만능 ISA (일임형)</b>
+                                    </strong>
+                                    <div class="info">
+                                        비과세 한도<br>
+                                        <strong>최고 4백만원</strong>
+                                    </div>
+                                    <a href="#">바로가기</a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-control">
+                        <button class="ui-btn before">이전</button>
+                        <ul>
+                            <li><a class="ct1 on" href="#"></a></li>
+                            <li><a class="ct2" href="#"></a></li>
+                            <li><a class="ct3" href="#"></a></li>
+                        </ul>
+                        <button class="ui-btn play off">자동재생시작</button>
+                        <button class="ui-btn stop">자동재생멈춤</button>
+                        <button class="ui-btn next btn-off">다음</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="info-board">
+                    <h2>새소식 / 이벤트</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <em class="icon1">새소식</em>
+                                <span>「디지털성금서비스 이용약관」 · 「디지털성금서...</span>
+                                <span>23.06.07</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="icon1">새소식</em>
+                                <span>「KB환율픽(Pick) 거래시간 확대 시행」 안내</span>
+                                <span>23.05.31</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="icon1">이벤트</em>
+                                <span>자녀 금융 복잡하고 고민될 땐 「6월 KB키즈패키...</span>
+                                <span>23.06.01 ~ 23.06.30</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="icon1">이벤트</em>
+                                <span>5번 결제하고 응모하면 3,000포인트리! 6월에...</span>
+                                <span>23.06.01 ~ 23.06.30</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-customer">
+                    <dl>
+                        <dt>고객센터</dt>
+                        <dd>1588·9999</dd>
+                        <dd>해외 +82-2-6300-9999</dd>
+                        <dd>외국인상담 1599-4477</dd>
+                        <dd>평일 09시 ~18시 (은행휴무일 제외)</dd>
+                    </dl>
+                    <ul>
+                        <li><a href="#">인터넷뱅킹 이용안내</a></li>
+                        <li><a href="#">보안프로그램 설치</a></li>
+                        <li><a href="#">이용수수료 안내</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <a href="#"><img src="../images/obank/banner_2022_chatbot2.png" alt="챗봇에게 물어봐~ 24시간 간편한 채팅상담 인터넷뱅킹 궁금증을 해결해드려요!"></a>
+                </div>
+            </div>            
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <script>
+        // menu
+        $('.menu > li').hover(
+            function(){$(this).find('.sub-menu').show()},
+            function(){$(this).find('.sub-menu').hide()}
+        )
+
+        const inputElement = document.querySelector('input[name="검색어temp"]');
+        const btnDel = document.querySelector('.btn-del');
+
+        inputElement.addEventListener('input', function() {
+            if (inputElement.value.trim() !== '') {
+                btnDel.classList.remove('off');
+            } else {
+                btnDel.classList.add('off');
+            }
+        });
+
+        btnDel.addEventListener('click', function() {
+            inputElement.value = '';
+            btnDel.classList.add('off');
+        });
+
+        // visual
+        let intervalId; // setInterval()의 핸들을 저장할 변수
+        let num = 1;
+
+        function addActiveClasses() {
+            const element = document.querySelector('.visual');
+
+            intervalId = setInterval(() => {
+                num = (num % 3) + 1;
+                element.className = `visual active${num}`;
+
+                for (let i = 1; i <= 3; i++) {
+                const con = document.querySelector(`.con${i}`);
+                const ct = document.querySelector(`.ct${i}`);
+                con.classList.toggle('on', i === num);
+                ct.classList.toggle('on', i === num);
+                }
+
+                console.log(num);
+            }, 3000);
+        }
+
+        function stopActiveClasses() {
+            clearInterval(intervalId);
+        }
+
+        function showSlide(direction) {
+            stopActiveClasses(); // 슬라이드 일시정지
+            stopBtn.classList.add('off'); // 멈춤 버튼 숨기기
+            playBtn.classList.remove('off'); // 재생 버튼 보이기
+
+            if (direction === 'prev') {
+                num = (num - 2 + 3) % 3 + 1;
+            } else {
+                num = num % 3 + 1;
+            }
+
+            changeSlide();
+        }
+
+
+        function changeSlide() {
+            const element = document.querySelector('.visual');
+            element.className = `visual active${num}`;
+
+            for (let i = 1; i <= 3; i++) {
+                const con = document.querySelector(`.con${i}`);
+                const ct = document.querySelector(`.ct${i}`);
+                con.classList.toggle('on', i === num);
+                ct.classList.toggle('on', i === num);
+            }
+
+            console.log(num);
+        }
+        
+        const playBtn = document.querySelector('.ui-btn.play');
+        playBtn.addEventListener('click', () => {
+            stopBtn.classList.remove('off');
+            playBtn.classList.add('off');
+            addActiveClasses(); // 멈췄던 부분에서 이어서 반복 실행
+        });
+
+        const stopBtn = document.querySelector('.ui-btn.stop');
+        stopBtn.addEventListener('click', () => {
+            console.log('s')
+            playBtn.classList.remove('off');
+            stopBtn.classList.add('off');
+            stopActiveClasses(); // 반복 중지
+        });
+
+        const beforeBtn = document.querySelector('.ui-btn.before');
+        beforeBtn.addEventListener('click', () => showSlide('prev'));
+
+        const nextBtn = document.querySelector('.ui-btn.next');
+        nextBtn.addEventListener('click', () => showSlide('next'));
+
+        const ctElements = document.querySelectorAll('[class^="ct"]');
+        ctElements.forEach((ctElement) => {
+            ctElement.addEventListener('click', (event) => {
+                const clickedNum = parseInt(event.currentTarget.classList[0].slice(2));
+                num = clickedNum; 
+                console.log(num);
+                $(`.area-con > ul >li`).not(`.con${num}`).removeClass('on')
+                $('.visual').removeClass((index, className) => {
+                return (className.match(/active\d+/) || []).join(' ');
+                });
+                $(`.area-con > ul .con${num}`).addClass('on')
+                $(`.visual`).addClass(`active${num}`)
+            });
+        });
+
+        $('.visual .area-control ul li').click(function(){
+            stopActiveClasses()
+            stopBtn.classList.add('off');
+            playBtn.classList.remove('off');
+            $(this).find('a').addClass('on');
+            $('.visual .area-control ul li').not($(this)).find('a').removeClass('on');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+        addActiveClasses();
+        });
+    </script>
+</body>
+</html>

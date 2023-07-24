@@ -1,0 +1,33 @@
+@keyframes ani_right_left {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes ani_bottom_top {
+    0% {
+        opacity: 0;
+        top: 30px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

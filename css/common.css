@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Malgun Gothic';
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 65px;
+    align-items: center;
+}
+
+.gnb {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    color: #5A5A5A;
+    z-index: 1;
+}
+
+.gnb > li {
+    position: relative;
+    height: 100%;
+    padding: 8px 0;
+}
+
+.gnb .m1,.m2 {
+    color: #000;
+}
+
+.gnb .m3::before,.m4::before,.m8::before,.m9::before {
+    content: '';
+    display: block;
+    float: left;
+    width: 1px;
+    height: 12px;
+    margin: 1.5px 0 0 -15px;
+    background: #c0c0c2;
+}
+
+.gnb .m3,.m4,.m8,.m9 {
+    margin-left: 15px;
+}
+
+.gnb > li ul {
+    display: none;
+    position: absolute;
+    right: 50%;
+    top: 30px;
+    width: 109px;
+    margin: 0 -76px 0 0;
+    padding: 6px 0 0;
+}
+
+.gnb > li > ul {
+    display: none;
+    overflow: hidden;
+    padding: 13px 10px 15px;
+    border-top: 2px solid #ffe85a;
+    background: #fff;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+.gnb > li > a.on::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: -4px 0 0 -3px;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid #ffe85a;
+}
+
+.gnb > li ul > li a {
+    display: block;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 27px;
+    white-space: nowrap;
+    color: #5a5a5a;
+}
+.gnb > li ul > li a:hover {
+    background-color: #ffe85a;
+}
+
+.gnb .m8::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: -2px 0px 0;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-top: 4px solid #000;
+}
+
+.gnb .m8 > a{
+    padding-right: 12px;
+}
+
+.gnb .m8 > ul {
+    min-width: 665px;
+    right: 0;
+    margin: 0;
+    /* display: flex; */
+    gap: 15px;
+    height: 260px;
+}
+
+.gnb .m8 > ul > li {
+    min-width: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+.gnb .m8 > ul > li:last-child {
+    margin-right: 0;
+}
+
+.gnb .m8 > ul > li > ul {
+    display: block;
+    left: 0;
+    top: 35px;
+    width: 100%;
+}
+
+.gnb > li > ul > li span {
+    display: block;
+    margin: 0 0 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 30px;
+    border-bottom: 1px solid #e7e4e2;
+    color: #53473f;
+    font-weight: bold;
+}
+
+.gnb > li > ul > li {
+    position: relative;
+    display: block;
+}
+
+.gnb .m10 a {
+    display: block;
+    width: 0;
+    padding: 0 0 0 30px;
+    line-height: 30px;
+    overflow: hidden;
+    background: url(../images/main/icon_set1_n2.png) no-repeat -285px -85px;
+    white-space: nowrap;
+}
+
+/* certMenu */
+.certMenu {
+    display: flex;
+    font-size: 14px;
+    color: #000;
+    
+}
+
+.certMenu li a {
+    background-color: #fff;
+    border: 1px solid #CFCFCF;
+    padding: 5px 14px 6px;
+    position: relative;
+}
+
+.certMenu li:last-child a {
+    border-left: none;
+}
+
+/* footer */
+.footer {
+    border-top: 1px solid #E0E0E0;
+    font-size: 14px;
+    letter-spacing: -0.07em;
+}
+
+.footer > div {
+    width: 980px;
+    height: 100%;
+    margin: 30px auto 14px;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav li::before {
+    position: absolute;
+    top: 3px;
+    left: -5px;
+    display: block;
+    content: '';
+    background-color: #BEBEBE;
+    width: 1px;
+    height: 12px;
+}
+
+.nav li:first-child::before  {
+    display: none;
+}
+
+.footer .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 8px;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #666;
+}
+
+.footer .info-group .list {
+    display: flex;
+    gap: 5px;
+}
+
+.footer .info-group .list > li > a {
+    border: 1px solid #bbb;
+    height: 36px;
+    align-items: center;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.footer .info-group .list > li:nth-child(1) > a {width: 160px;}
+.footer .info-group .list > li:nth-child(2) > a {width: 207px;}
+.footer .info-group .list > li:nth-child(3) > a {width: 222px;}
+.footer .info-group .list > li:nth-child(4) > a {width: 186px;}
+
+.footer .info-group .list > li > a::before {
+    display: block;
+    position: absolute;
+    right: 10px;
+    content: '';
+    background: url('../images/main/icon_down.png') no-repeat 0 0;
+    width: 17px;
+    height: 17px;
+}
+
+.footer .info-group .list > li > a.on::before {
+    transform: scaleY(-1);
+}
+
+.footer .info-group .list > li:nth-child(3) > a::before {display: none;}
+
+.footer .info-group .list > li {
+    position: relative;
+}
+
+.footer .info-group .list > li:nth-child(2) div {
+    width: 360px;
+    padding: 0 14px;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl {
+    display: grid;
+    grid-template-columns: 90px 238px;
+    width: 360px;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl dt,dd {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl dt,dd:last-child {
+    border: none;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl dt {
+    color: #7d5735;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl dd span{
+    font-weight: normal;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl dd li {
+    padding-top: 15px;
+}
+
+.footer .info-group .list > li:nth-child(2) div dl dd li:first-child {
+    padding-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.footer .info-group .list .info {
+    display: none;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    width: 100%;
+}
+
+.footer .info-group .list .info ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer .info-group .list .info ul a {
+    padding: 8px 14px;
+}
+.footer .info-group .list .info ul a:hover {
+    background-color: #ffe500;
+}
+
+.footer .info-sns ul {
+    display: flex;
+    gap: 10px;
+}
+
+
+.footer .info-sns ul a {
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+}
+
+.footer .info-sns ul a::before {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 32px;
+}
+
+.info-sns .ic1 a::before {background: url('../images/main/sns_facebook.png');}
+.info-sns .ic2 a::before {background: url('../images/main/sns_instagram.png');}
+.info-sns .ic3 a::before {background: url('../images/main/sns_youtube.png');}
+.info-sns .ic4 a::before {background: url('../images/main/sns_blog.png');}
+
+.footer > div > p {
+    font-size: 11px;
+    letter-spacing: 0;
+    color: #666;
+    position: relative;
+    margin-left: 12px;
+}
+.footer > div > p::before {
+    background-color: #666;
+    display: block;
+    content: '';
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -12px;
+}
+
+.footer .copy {
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #666;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer .copy ul {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .copy ul span {
+    display: block;
+    width: 150px;
+    height: 39px;
+    overflow: hidden;
+}
+
+.footer .copy ul span::before {
+    content: '';
+    display: block;
+    background: url(../images/main/intro_logo_ncsi_2022.jpg) no-repeat 0 0;
+    width: 150px;
+    height: 39px;
+}
+
+.footer .copy ul a {
+    display: block;
+    width: 48.36px;
+    height: 39px;
+    overflow: hidden;
+}
+
+.footer .copy ul a::before {
+    content: '';
+    display: block;
+    background-image: url('../images/main/wa_mark_2022.png');
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    width: 48.36px;
+    height: 39px;
+}
