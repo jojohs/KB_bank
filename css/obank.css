@@ -610,9 +610,11 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     background-color: #222;
     position: absolute;
     bottom: -8px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
     height: 1px;
+    text-align: center;
 }
 
 .slider {
