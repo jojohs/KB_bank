@@ -94,3 +94,16 @@
         <a href="#">통합검색</a>
     </li>
 </ul>
+
+<script>
+    $('.gnb>li').hover(
+        function(){
+            $(this).find('ul').show()
+            $(this).find('a').addClass('on')
+        },
+        function(){
+            $(this).find('ul').hide()
+            $(this).find('a').removeClass('on')
+        }
+    )
+</script>

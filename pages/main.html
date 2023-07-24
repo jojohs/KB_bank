@@ -303,21 +303,6 @@
 </html>
 
 <script>
-    // gnb
-    $('.gnb>li').hover(
-        function(){
-            $(this).find('ul').show()
-            $(this).find('a').addClass('on')
-        },
-        function(){
-            $(this).find('ul').hide()
-            $(this).find('a').removeClass('on')
-        }
-    )
-
-
-
-    
     // visual
     let intervalId; // setInterval()의 핸들을 저장할 변수
     let num = 1;
@@ -453,19 +438,4 @@
             $('.toggle-area button').addClass('on');
         }
     }
-
-    // footer
-    $('.footer .info-group .list >li').hover(
-        function(){
-            $(this).find('.info').show()
-            $(this).find('a').addClass('on')
-        },
-        function(){
-            $(this).find('.info').hide()
-            $(this).find('a').removeClass('on')
-        }
-    )
-    
-    
-    
 </script>

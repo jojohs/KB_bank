@@ -129,3 +129,16 @@
         </ul>
     </div>
 </div>
+<script>
+    // footer
+    $('.footer .info-group .list >li').hover(
+        function(){
+            $(this).find('.info').show()
+            $(this).find('a').addClass('on')
+        },
+        function(){
+            $(this).find('.info').hide()
+            $(this).find('a').removeClass('on')
+        }
+    )
+</script>
