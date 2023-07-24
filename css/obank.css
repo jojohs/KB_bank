@@ -595,6 +595,27 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #7F6707;
     font-size: 14px;
     letter-spacing: -0.06em;
+    display: block;
+}
+
+.headline .c1 {
+    position: relative;
+    display: block;
+}
+
+.headline .c1::before {
+    display: block;
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-image: url('../images/obank/icon_clock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 96px;
+    transform: translateY(-50%);
 }
 
 .headline a {
@@ -606,30 +627,27 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .headline a::before {
     content: '';
-    display: block;
+    display: inline-block;
     background-color: #222;
     position: absolute;
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 99px;
     height: 1px;
     text-align: center;
 }
 
 .slider {
-    flex: 1;
-    position: relative;
+    width: 650px;
 }
 
 .list-product {
+    background-color: #469E95;
     display: flex;
+    width: 650px;
     gap: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
-
     
 .list-product li {
     background-color: #fff;
@@ -643,4 +661,346 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.list-product li > a {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list-product li {
+    position: relative;
+}
+
+.list-product li::before {
+    background: url('../images/obank/icon_set4.png') no-repeat 0 0;
+    display: block;
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.list-product .pro1::before {background-position: -10px -70px;}
+.list-product .pro2::before {background-position: -170px -70px;}
+.list-product .pro3::before {background-position: -90px -70px;}
+.list-product .pro4::before {background-position: -250px -70px;}
+.list-product .pro5::before {background-position: -330px -70px;}
+.list-product .pro6::before {background-position: -410px -70px;}
+
+.list-product em {
+    background-color: #EB7311;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    font-style: normal;
+    height: 28px;
+    line-height: 28px;
+    width: 28px;
+    display: inline-block;
+    position: absolute;
+    top: -14px;
+    left: 34px;
+}
+
+.list-product .pro2 em {
+    background-color: #508AE6;
+    width: 57px;
+}
+.list-product .pro3 em {
+    background-color: #469E95;
+    width: 28px;
+}
+.list-product .pro4 em {
+    background-color: #7F78CB;
+    width: 83px;
+}
+.list-product .pro5 em {
+    background-color: #5394C3;
+    width: 28px;
+}
+.list-product .pro6 em {
+    background-color: #7F78CB;
+    width: 28px;
+}
+
+.list-product em::before {
+    background: url('../images/obank/bg_cate.png') no-repeat 0 0;
+    display: block;
+    content: '';
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: -14px;
+}
+
+.list-product .pro2 em::before {background-position: -60px 0;}
+.list-product .pro3 em::before {background-position: -30px 0;}
+.list-product .pro4 em::before {background-position: -90px 0;}
+.list-product .pro5 em::before {background-position: -120px 0;}
+.list-product .pro6 em::before {background-position: -90px 0;}
+
+.list-product em::after {
+    background: url('../images/obank/bg_cate.png') no-repeat 0 0;
+    display: block;
+    content: '';
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: -14px;
+}
+
+.list-product .pro1 em::after {background-position: -15px 0;}
+.list-product .pro2 em::after {background-position: -75px 0;}
+.list-product .pro3 em::after {background-position: -45px 0;}
+.list-product .pro4 em::after {background-position: -105px 0;}
+.list-product .pro5 em::after {background-position: -135px 0;}
+.list-product .pro6 em::after {background-position: -105px 0;}
+
+.list-product a > strong {
+    letter-spacing: -0.06em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 10px;
+}
+
+.list-product strong > span {
+    margin-top: 115px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+    display: block;
+    height: 21px;
+}
+
+.list-product strong > b {
+    font-size: 20px;
+    color: #333;
+}
+
+.list-product .info {
+    font-size: 20px;
+    letter-spacing: -0.06em;
+    color: #929292;
+    margin-top: 55px;
+}
+
+.list-product .pro5 .info {
+    margin-top: 28px;
+}
+
+.list-product .info > strong {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.list-product .link {
+    font-size: 18px;
+    letter-spacing: -0.06em;
+    color: #fff;
+    background-color: #EB7311;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+
+.list-product .pro2 .link {background-color: #508AE6;}
+.list-product .pro3 .link {background-color: #469E95;}
+.list-product .pro4 .link {background-color: #7F78CB;}
+.list-product .pro5 .link {background-color: #5394C3;}
+.list-product .pro6 .link {background-color: #7F78CB;}
+
+/* section2 */
+.section2 {
+    width: 980px;
+    margin: 0 auto;
+    height: 578px;
+    padding-top: 60px;
+}
+
+.section2 .info {
+    display: flex;
+}
+
+/* info-board */
+.info-board {
+    width: 647px;
+    height: 237px;
+    padding: 8px 24px 7px 23px;
+}
+
+.info-board h2 {
+    color: #222;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ddd;
+    width: 600px;
+}
+
+.info-board ul {
+    margin-top: 25px;
+}
+
+.info-board li {
+    width: 597px;
+    margin-bottom: 15px;
+}
+
+.info-board li a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 597px;
+}
+
+.info-board li a span {
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    color: #666;
+    width: 372px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-board li a span:last-child {
+    width: 140px;
+    padding-left: 23px;
+    color: #929292;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    position: relative;
+}
+
+.info-board li a span:last-child::before {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url('../images/obank/icon_clock_gray.png') no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.info-board em {
+    display: block;
+    color: #E07B16;
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #E07B16;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+}
+
+.info-board li:nth-child(3) em, .info-board li:nth-child(4) em {
+    color: #508AE6;
+    border: 1px solid #508AE6;
+}
+
+
+/* info-customer */
+.info-customer {
+    border-left: 1px solid #ddd;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-customer dl dt {
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    color: #222;
+    font-weight: bold;
+}
+
+.info-customer dl {
+    text-align: center;
+}
+
+.info-customer dl dt + dd {
+    color: #DE7817;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.info-customer dl dd {
+    color: #929292;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: -0.03em;
+    border: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.info-customer dl dd:last-child {
+    font-size: 12px;
+}
+
+.info-customer ul {
+    display: flex;
+    color: #929292;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.info-customer ul::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    width: 10px;
+    height: 2px;
+    background: #f7a13d;
+}
+
+.info-customer ul li {
+    position: relative;
+}
+
+.info-customer ul li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #929292;
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    transform: translateY(-50%);
+}
+
+.info-customer ul li:first-child:before {
+    display: none;
+}
+
+.section2 .banner {
+    margin-top: 60px;
 }

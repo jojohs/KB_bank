@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/obank.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
     <title>개인뱅킹</title>
 </head>
 <body>
@@ -609,7 +614,7 @@
                     <div class="headline">
                         <p>고객님들의 행복한 삶을 위한</p>
                         <strong><span>KB</span> 대표상품</strong>
-                        <span>2023.06.15 기준</span>
+                        <span class="c1">2023.06.15 기준</span>
                         <span>세금공제전, 우대금리포함</span>
                         <a href="#">바로가기 →</a>
                     </div>
@@ -626,7 +631,7 @@
                                         최고 연 (36개월)<br>
                                         <strong>3.71%</strong>
                                     </div>
-                                    <a href="#">바로가기</a>
+                                    <a class="link" href="#">바로가기</a>
                                 </a>
                             </li>
                             <li class="pro2">
@@ -640,20 +645,20 @@
                                         최고<br>
                                         <strong>3억원</strong>
                                     </div>
-                                    <a href="#">바로가기</a>
+                                    <a class="link" href="#">바로가기</a>
                                 </a>
                             </li>
                             <li class="pro3">
                                 <a href="#">
                                     <em>펀드</em>
                                     <strong>
-                                        <span> </span>
+                                        <span></span>
                                         <b>이달의 펀드</b>
                                     </strong>
                                     <div class="info">
                                         KB 투자 전문가가 선택한<br>이달의 펀드
                                     </div>
-                                    <a href="#">바로가기</a>
+                                    <a class="link" href="#">바로가기</a>
                                 </a>
                             </li>
                             <li class="pro4">
@@ -666,7 +671,7 @@
                                     <div class="info">
                                         믿고 맡기면 든든한 KB 신탁
                                     </div>
-                                    <a href="#">바로가기</a>
+                                    <a class="link" href="#">바로가기</a>
                                 </a>
                             </li>
                             <li class="pro5">
@@ -681,7 +686,7 @@
                                         보험사<br>
                                         <strong>KB생명</strong>
                                     </div>
-                                    <a href="#">바로가기</a>
+                                    <a class="link" href="#">바로가기</a>
                                 </a>
                             </li>
                             <li class="pro6">
@@ -695,7 +700,7 @@
                                         비과세 한도<br>
                                         <strong>최고 4백만원</strong>
                                     </div>
-                                    <a href="#">바로가기</a>
+                                    <a class="link" href="#">바로가기</a>
                                 </a>
                             </li>
                         </ul>
@@ -714,52 +719,54 @@
                 </div>
             </div>
             <div class="section2">
-                <div class="info-board">
-                    <h2>새소식 / 이벤트</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <em class="icon1">새소식</em>
-                                <span>「디지털성금서비스 이용약관」 · 「디지털성금서...</span>
-                                <span>23.06.07</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <em class="icon1">새소식</em>
-                                <span>「KB환율픽(Pick) 거래시간 확대 시행」 안내</span>
-                                <span>23.05.31</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <em class="icon1">이벤트</em>
-                                <span>자녀 금융 복잡하고 고민될 땐 「6월 KB키즈패키...</span>
-                                <span>23.06.01 ~ 23.06.30</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <em class="icon1">이벤트</em>
-                                <span>5번 결제하고 응모하면 3,000포인트리! 6월에...</span>
-                                <span>23.06.01 ~ 23.06.30</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="info-customer">
-                    <dl>
-                        <dt>고객센터</dt>
-                        <dd>1588·9999</dd>
-                        <dd>해외 +82-2-6300-9999</dd>
-                        <dd>외국인상담 1599-4477</dd>
-                        <dd>평일 09시 ~18시 (은행휴무일 제외)</dd>
-                    </dl>
-                    <ul>
-                        <li><a href="#">인터넷뱅킹 이용안내</a></li>
-                        <li><a href="#">보안프로그램 설치</a></li>
-                        <li><a href="#">이용수수료 안내</a></li>
-                    </ul>
+                <div class="info">
+                    <div class="info-board">
+                        <h2>새소식 / 이벤트</h2>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <em class="icon1">새소식</em>
+                                    <span>「디지털성금서비스 이용약관」 · 「디지털성금서비스 이용단체 이용약관」 개정 안내</span>
+                                    <span>23.06.07</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="icon1">새소식</em>
+                                    <span>「KB환율픽(Pick) 거래시간 확대 시행」 안내</span>
+                                    <span>23.05.31</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="icon1">이벤트</em>
+                                    <span>자녀 금융 복잡하고 고민될 땐 「6월 KB키즈패키지」로 해결!</span>
+                                    <span>23.06.01 ~ 23.06.30</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="icon1">이벤트</em>
+                                    <span>5번 결제하고 응모하면 3,000포인트리! 6월에도 KB스타뱅킹 KB Pay 너로 정했다~</span>
+                                    <span>23.06.01 ~ 23.06.30</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-customer">
+                        <dl>
+                            <dt>고객센터</dt>
+                            <dd>1588·9999</dd>
+                            <dd>해외 +82-2-6300-9999</dd>
+                            <dd>외국인상담 1599-4477</dd>
+                            <dd>평일 09시 ~18시 (은행휴무일 제외)</dd>
+                        </dl>
+                        <ul>
+                            <li><a href="#">인터넷뱅킹 이용안내</a></li>
+                            <li><a href="#">보안프로그램 설치</a></li>
+                            <li><a href="#">이용수수료 안내</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="banner">
                     <a href="#"><img src="../images/obank/banner_2022_chatbot2.png" alt="챗봇에게 물어봐~ 24시간 간편한 채팅상담 인터넷뱅킹 궁금증을 해결해드려요!"></a>
@@ -893,6 +900,30 @@
 
         document.addEventListener('DOMContentLoaded', () => {
         addActiveClasses();
+        });
+
+        // section1
+        $('.section1 .slider .list-product').slick({
+            slide: 'li',
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: $('.section1 .ui-btn.before'),
+            nextArrow: $('.section1 .ui-btn.next'),
+        });
+
+        $('.section1 .ui-btn.play').click(function(){
+            $('.section1 .list-product').slick('slickPlay');
+            $('.section1 .ui-btn.stop').removeClass('off');
+            $(this).addClass('off');
+        });
+
+        $('.section1 .ui-btn.stop').click(function(){
+            $('.section1 .list-product').slick('slickPause');
+            $('.section1 .ui-btn.play').removeClass('off');
+            $(this).addClass('off');
         });
     </script>
 </body>
