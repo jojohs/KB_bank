@@ -1,0 +1,698 @@
+.header .m3 {
+    display: none;
+}
+
+.top .container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.menu {
+    background-color: #E2DFDA;
+}
+
+.menu > ul {
+    display: flex;
+    width: 1080px;
+    height: 58px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu > ul > li > a {
+    text-align: center;
+    width: 135px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    letter-spacing: -0.05em;
+}
+
+.menu > ul > li > a:hover {
+    background-color: #384d84;
+    color: #fff;
+}
+
+.sub-menu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 10px 10px 0px rgba(0,0,0,0.2);
+}
+
+.sub-menu > ul {
+    width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+    border-right: 1px solid #F2F2F2;
+}
+
+.sub-menu > ul > li {
+    border-left: 1px solid #F2F2F2;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-menu > ul > li > a {
+    font-family: 'GmarketSansMedium';
+    font-size: 15px;
+    color: #000;
+    padding: 9px;
+}
+
+.sub-menu > ul > li > ul {
+    font-size: 13px;
+    color: #5a5a5a;
+    letter-spacing: -0.05em;
+}
+
+.sub-menu > ul > li > ul > li > a {
+    padding: 5px 9px;
+}
+
+.sub-menu > ul > li > ul > li:hover > a {
+    background-color: #f0f4fb;
+} 
+
+
+
+/* visual */
+.visual .container {
+    width: 1080px;
+    margin: 0 auto;
+    height: 435px;
+    position: relative;
+}
+
+.area-con li {
+    display: none;
+    margin-left: 70px;
+    flex-direction: column;
+    position: relative;
+}
+
+.area-con li.on {
+    display: flex
+}
+
+.area-con li::before {
+    display: block;
+    content: '';
+    width: 542px;
+    height: 436px;
+    background: url('../images/obiz/bg_visual_main01.png');
+    position: absolute;
+    top: 0;
+    right: 30px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: ani_bottom_top;
+    animation-duration: 1.5s;
+}
+
+.area-con .con1::before {
+    background: url('../images/obiz/bg_visual_main02.png');
+    width: 540.76px;
+    height: 435px;
+}
+.area-con .con2::before {background: url('../images/obiz/bg_visual_main07.png')}
+.area-con .con3::before {background: url('../images/obiz/bg_visual_main01.png')}
+.area-con .con4::before {background: url('../images/obiz/bg_visual_main03.png')}
+.area-con .con5::before {background: url('../images/obiz/bg_visual_main04.png')}
+
+.area-con li > span:first-child {
+    margin-top: 50px;
+    font-size: 26px;
+    letter-spacing: -0.1em;
+    color: #111;
+    line-height: 1.5;
+}
+
+.area-con li > strong {
+    background-color: #384D84;
+    color: #fff;
+    font-family: 'GmarketSansMedium';
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: -0.1em;
+    margin-top: 14px;
+    margin-bottom: 17px;
+    height: 54px;
+    border-radius: 0 12px;
+    text-align: center;
+    animation-name: ani_right_left;
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.area-con .con1 strong {width: 388px;}
+.area-con .con2 strong {width: 180px;padding-top: 8px;}
+.area-con .con3 strong {width: 190px;}
+.area-con .con4 strong {width: 388px;}
+.area-con .con5 strong {width: 298px;}
+
+.area-con ul > li span {
+    font-size: 18px;
+    letter-spacing: -0.1em;
+    line-height: 1.5;
+    animation-name: ani_right_left;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.area-con li > a {
+    font-size: 15px;
+    color: #222;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 40px;
+    animation-name: ani_right_left;
+    animation-duration: 0.6s;
+    animation-delay: 0.8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.area-con li > a:hover {
+    color: #3261db;
+}
+/* area-control */
+.area-control {
+    margin-left: 70px;
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+}
+
+.ui-btn:hover{
+    cursor: pointer;
+}
+
+.area-control ul, .area-control ul li, .area-control .ui-btn {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+.area-control ul > li > a, .area-control .ui-btn {
+    overflow: hidden;
+    position: relative;
+    padding-left: 16px;
+    width: 0;
+    height: 20px;
+}
+
+.area-control ul > li > a:before, .area-control .ui-btn:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.area-control ul > li > a {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 0;
+    height: 20px;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.area-control ul > li > a:before {
+    left: 3px;
+    right: 3px;
+    height: 6px;
+    margin: -3px 0 0;
+    border-radius: 3px;
+    background: #a3a3a3;
+}
+
+.area-control ul > li > .ct1.on {padding-left: 23px;}
+.area-control ul > li > .ct2.on {padding-left: 23px;}
+.area-control ul > li > .ct3.on {padding-left: 23px;}
+.area-control ul > li > .ct4.on {padding-left: 23px;}
+.area-control ul > li > .ct5.on {padding-left: 23px;}
+
+.area-control ul > li > a.on:before {
+    background: #6d6d6a;
+}
+
+.area-control .ui-btn.next, .area-control .ui-btn.before {
+    border: none;
+}
+
+.area-control .ui-btn.next {
+    margin: 0 0 0 12px;
+    background: url(../images/main/icon_down.png) no-repeat 0 0;
+    transform: rotate(-90deg);
+}
+
+.area-control .ui-btn.before {
+    margin: 0 12px 0 0;
+    background: url(../images/main/icon_down.png) no-repeat 0 0;
+    transform: rotate(90deg);
+}
+
+.area-control .ui-btn.before:before, .area-control .ui-btn.next:before, .area-control .ui-btn.before:after, .area-control .ui-btn.next:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    display: block;
+}
+
+
+.area-control .ui-btn.stop, .area-control .ui-btn.play {
+    margin: 0 0 0 3px;
+    border: none;
+    background: none;
+}
+
+.area-control .ui-btn.stop:before {
+    margin: -3px -3px;
+    width: 2px;
+    height: 7px;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+}
+
+.area-control .ui-btn.play:before {
+    margin: -4px -3px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-left: 6px solid #333;
+}
+
+.area-control .ui-btn.off {
+    display: none;
+}
+
+/* link-nav */
+.link-nav {
+    background-color: #F0ECE8;
+    height: 138px;
+}
+
+.link-nav ul {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 90px 70px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #4E473F;
+    font-family: 'GmarketSansLignt';
+    font-size: 17px;
+    letter-spacing: -0.05em;
+}
+
+.link-nav li:hover {
+    font-family: 'GmarketSansMedium';
+    position: relative;
+}
+
+.link-nav li:hover::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFCE0B;
+    position: absolute;
+    bottom: 0;
+}
+
+.link-nav ul li a {
+    position: relative;
+}
+
+
+.link-nav ul li a::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 50px;
+    background: url('../images/obiz/ico-main-quick01.png') no-repeat 0 0;
+    padding-bottom: 10px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link-nav ul li a:hover::before {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.link-nav .ic2 a::before {background-position: -62px 0;}
+.link-nav .ic3 a::before {background-position: -124px 0;}
+.link-nav .ic4 a::before {background-position: -186px 0;}
+.link-nav .ic5 a::before {background-position: -248px 0;}
+
+/* section2 */
+.section2 {
+    background-color: #D9E4FA;
+    height: 434px;
+    padding-top: 57px;
+}
+
+.section2 .product {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-product {
+    width: 765px;
+}
+
+.list-product ul {
+    /* display: flex; */
+    display: none;
+    width: 765px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.list-product ul.on {
+    display: flex;
+}
+
+.list-product ul li {
+    margin-top: 25px;
+    width: 255px;
+    height: 225px;
+    border-right: 1px solid #ddd;
+    padding-left: 30px;
+    position: relative;
+}
+
+.list-product .pro3, .list-product .item3 .pro1 {
+    border: none;
+}
+
+.list-product ul li::before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 2px;
+    right: 30px;
+}
+.list-product .item1 .pro1::before {background: url('../images/obiz/bg-main-product01.png') no-repeat 0 0;}
+.list-product .item1 .pro2::before {background: url('../images/obiz/bg-main-product04.png') no-repeat 0 0;}
+.list-product .item1 .pro3::before {background: url('../images/obiz/bg-main-product06.png') no-repeat 0 0;}
+.list-product .item2 .pro1::before {background: url('../images/obiz/bg-main-product01.png') no-repeat 0 0;}
+.list-product .item2 .pro2::before {background: url('../images/obiz/bg-main-product08.png') no-repeat 0 0;}
+.list-product .item2 .pro3::before {background: url('../images/obiz/bg-main-product05.png') no-repeat 0 0;}
+.list-product .item3 .pro1::before {background: url('../images/obiz/bg-main-product02.png') no-repeat 0 0;}
+
+.list-product .info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-product .title {
+    font-size: 20px;
+    color: #111;
+    letter-spacing: -0.1em;
+    margin-bottom: 10px;
+}
+
+.list-product .text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+    letter-spacing: -0.1em;
+}
+
+.list-product a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+
+.list-product a:hover {
+    color: #3261db;
+}
+
+.event .list-product li {
+    width: 290px;
+    height: 280px;
+    background-color: #F0FFF1;
+    border-radius: 10px;
+}
+
+.event .list-product li:last-child {
+    background-color: #EEFAFF;
+}
+
+.event .list-product .info {
+    width: 230px;
+    height: 250px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.event .list-product .info::before {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 96px;
+    background: url('../images/obiz/bg-main-marketing_esg.png') no-repeat 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.event .list-product .pro2 .info::before {
+    width: 119px;
+    height: 95px;
+    background: url('../images/obiz/bg-main-marketing01.png') no-repeat 0 0;
+}
+
+.event .list-product .info a {
+    left: 0;
+}
+
+.wrap-slider {
+    position: relative;
+}
+
+.wrap-slider .area-control {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+}
+
+.event {
+    position: relative;
+}
+
+.event .area-control {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+}
+
+/* section3 */
+.section3 {
+    background-color: #F8F8F8;
+    height: 348px;
+    padding-top: 33px;
+}
+
+.section3 .container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section3 h2 {
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.notice a, .introducton a, .cs .time{
+    font-size: 14px;
+    color: #666;
+    letter-spacing: -0.05em;
+}
+
+.notice {
+    width: 464px;
+    height: 282px;
+    border-right: 1px solid #ddd;
+}
+
+.notice ul, .introducton ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notice li, .introducton li {
+    position: relative;
+    padding-left: 13px;
+}
+
+.notice li::before, .introducton li::before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #AEAEAE;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+.notice a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.notice em {
+    display: block;
+    width: 55px;
+    height: 24px;
+    border: 1px solid #DC0913;
+    color: #DC0913;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+}
+
+.notice .faq {
+    color: #3261DB;
+    border: 1px solid #3261DB;
+}
+
+.introducton {
+    width: 325px;
+    height: 282px;
+    border-right: 1px solid #ddd;
+    padding-left: 32px;
+}
+
+.introducton .banner {
+    margin-top: 40px;
+}
+
+.cs {
+    width: 291px;
+    height: 282px;
+    padding-left: 30px;
+}
+
+.cs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cs li {
+    display: flex;
+    flex-direction: column;
+}
+
+.cs .call {
+    font-size: 20px;
+    font-weight: bold;
+    color: #D63200;
+}
+
+.cs .part {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cs a {
+    width: 160px;
+    height: 28px;
+    background-color: #fff;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: #666;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 3px 13px;
+    margin-top: 17px;
+}
+
+.cs a:hover {
+    background-color: #eee;
+}
+
+.cs a::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/obiz/ico-link.png');
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+}
+
+/* footer */
+.footer {
+    background-color: #F8F8F8;
+}
+
+.footer .copy ul {
+    display: none;
+}
+
+.footer .info-group .list .info ul a:hover {
+    background-color: #f0f4fb;
+}
+
+.info-sns .ic1 a::before {background: url('../images/obiz/footer_facebook.png');}
+.info-sns .ic2 a::before {background: url('../images/obiz/footer_instagram.png');}
+.info-sns .ic3 a::before {background: url('../images/obiz/footer_yutube.png');}
+.info-sns .ic4 a::before {background: url('../images/obiz/footer_blog.png');}

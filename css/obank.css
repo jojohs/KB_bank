@@ -3,6 +3,10 @@
     height: 55px;
 }
 
+.header .m3 {
+    display: none;
+}
+
 /* top */
 .top {
     position: relative;
@@ -66,7 +70,7 @@
 .sub-menu{
     display: none;
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     top: 146px;
     left: 0;
     width: 100%;
@@ -556,7 +560,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .product {
     width: 980px;
-    margin: 48px auto 0;
+    margin: 34px auto 0;
     display: flex;
     gap: 10px;
     position: relative;
@@ -571,6 +575,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 14px;
 }
 
 .headline p {
@@ -643,10 +648,12 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .list-product {
-    background-color: #469E95;
+    /* width: 650px; */
+}
+
+.list-product ul {
     display: flex;
     width: 650px;
-    gap: 10px;
 }
     
 .list-product li {
@@ -654,6 +661,12 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     border: 1px solid #ddd;
     width: 320px;
     height: 400px;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+
+.list-product > ul > li:first-child {
+    margin-right: 10px;
 }
 
 .product .area-control {
@@ -675,6 +688,28 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .list-product li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s;
+    transform: scaleX(0);
+}
+.list-product .pro1::before {background-color: #EB7311;}
+.list-product .pro2::before {background-color: #508AE6;}
+.list-product .pro3::before {background-color: #469E95;}
+.list-product .pro4::before {background-color: #7F78CB;}
+.list-product .pro5::before {background-color: #5394C3;}
+.list-product .pro6::before {background-color: #7F78CB;}
+
+.list-product li:hover::before {
+    transform: scaleX(1);
+}
+
+.list-product li::after {
     background: url('../images/obank/icon_set4.png') no-repeat 0 0;
     display: block;
     content: '';
@@ -684,14 +719,15 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
-.list-product .pro1::before {background-position: -10px -70px;}
-.list-product .pro2::before {background-position: -170px -70px;}
-.list-product .pro3::before {background-position: -90px -70px;}
-.list-product .pro4::before {background-position: -250px -70px;}
-.list-product .pro5::before {background-position: -330px -70px;}
-.list-product .pro6::before {background-position: -410px -70px;}
+.list-product .pro1::after {background-position: -10px -70px;}
+.list-product .pro2::after {background-position: -170px -70px;}
+.list-product .pro3::after {background-position: -90px -70px;}
+.list-product .pro4::after {background-position: -250px -70px;}
+.list-product .pro5::after {background-position: -330px -70px;}
+.list-product .pro6::after {background-position: -410px -70px;}
 
 .list-product em {
     background-color: #EB7311;
@@ -1003,4 +1039,8 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .section2 .banner {
     margin-top: 60px;
+}
+
+.footer .copy ul li:last-child {
+    display: none;
 }

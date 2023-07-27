@@ -322,7 +322,7 @@
             }
 
             console.log(num);
-        }, 3000);
+        }, 4000);
     }
 
     function stopActiveClasses() {
@@ -382,7 +382,6 @@
         ctElement.addEventListener('click', (event) => {
             const clickedNum = parseInt(event.currentTarget.classList[0].slice(2));
             num = clickedNum; 
-            console.log(num);
             $(`.area-con > ul >li`).not(`.con${num}`).removeClass('on')
             $('.top').removeClass((index, className) => {
             return (className.match(/active\d+/) || []).join(' ');
@@ -410,7 +409,7 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         prevArrow: $('.ui-btn.before'),
         nextArrow: $('.ui-btn.next'),
     });

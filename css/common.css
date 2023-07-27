@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'GmarketSansLight';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -98,7 +98,7 @@ body {
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.1);
 }
 
-.gnb > li > a.on::before {
+.gnb > .m1 > a.on::before, .gnb > .m2 > a.on::before, .gnb > .m8 > a.on::before, .gnb > .m9 > a.on::before {
     content: '';
     position: absolute;
     left: 50%;
