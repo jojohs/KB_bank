@@ -647,10 +647,6 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
     width: 650px;
 }
 
-.list-product {
-    /* width: 650px; */
-}
-
 .list-product ul {
     display: flex;
     width: 650px;
